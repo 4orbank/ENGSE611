@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .center {
+            text-align: center;
+        }
+        :left {
+            text-align: left;
+        }
+        .right {
+            text-align: right;
+        }
+        .underline {
+            text-decoration: underline;
+        }
+        .overline {
+            text-decoration: overline;
+        }
+        .line-through {
+            text-decoration: line-through;
+        }
+        .line-height1{
+            line-height: 1.5;
+        }
+        .line-height2{
+            line-height: 24px;
+        }
+        .background{
+            background-color: lightgrey;
+            background-size: 50px 50px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .backgroundinline{
+            background-color: lightgrey;
+            background-size: 20px 20px;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: inline;
+        }
+        .h1{
+            font-size: 30px;
+            font-weight: bold;
+            font-style: italic;
+        }
+        .h2{
+            font-size: 24px;
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="header center">Text Properties Example</h1>
+    <h2 class="h2 left">ตัวอย่างการจัดตำแหน่งข้อความ (Text Alignment)</h2>
+    <h2 class="h2 center">ตัวอย่าง background</h2>
+        <p class="background">ข้อความนี้มีการตั้งค่าพื้นหลังแบบบล็อก (block)</p>
+        <p class="backgroundinline">ข้อความนี้มีการตั้งค่าพื้นหลังแบบอินไลน์ (inline)</p>
+    <h2 class="h2 left">ตัวอย่างการจัดตำแหน่งข้อความ (Text Alignment)</h2>
+        <p class="center">ข้อความนี้จัดกึ่งกลาง (center)</p>
+        <p class="right">ข้อความนี้จัดชิดขวา (right)</p>
+        <p class="left">ข้อความนี้จัดชิดซ้าย (left)</p>
+    <h2 class="h2 left">ตัวอย่างการขีดเส้นใต้ ขีดเส้นบน และขีดฆ่ากลางข้อความ (Text Decoration)</h2>
+        <p class="underline">ข้อความนี้มีเส้นใต้ (underline)</p>
+        <p class="overline">ข้อความนี้มีเส้นบน (overline)</p>
+        <p class="line-through">ข้อความนี้มีเส้นขีดฆ่ากลาง (line-through)</p>
+    <h2 class="h2 left">ตัวอย่างการตั้งค่าความสูงของบรรทัด (Line Height)</h2>
+        <p class="line-height1 background">
+            ข้อความนี้มีการตั้งค่าความสูงของบรรทัดเป็น 1.5 (line-height: 1.5)
+            เพื่อเพิ่มระยะห่างระหว่างบรรทัดของข้อความให้มากขึ้น
+        </p>
+        <p class="line-height2 background">
+            ข้อความนี้มีการตั้งค่าความสูงของบรรทัดเป็น 24px (line-height: 24px)
+            เพื่อเพิ่มระยะห่างระหว่างบรรทัดของข้อความให้มากขึ้น
+</body>
+</html>

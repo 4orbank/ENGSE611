@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="boxcss.css">
+</head>
+<body>
+
+<h2>CSS Box Model</h2>
+
+<h3>1) box-sizing: content-box (ค่าปกติ)</h3>
+<div class="box content-box">
+  ความกว้างที่กำหนด = 200px  
+  (ไม่รวม padding + border)
+</div>
+
+<h3>2) box-sizing: border-box</h3>
+<div class="box border-box">
+  ความกว้างที่กำหนด = 200px  
+  (รวม padding + border อยู่ใน 200px)
+</div>
+
+<h3>box-sizing: margin</h3>
+<div class="box box-margin">
+    ความกว้างที่กำหนด = 200px  
+    (รวม padding + border + margin อยู่ใน 200px)
+</div>
+
+<h3>border-radius-20</h3>
+<div class="box2 redius-20">
+    border-radius: 20px;
+</div>
+
+<h3>border-radius-50</h3>
+<div class="box2 redius-50">
+    border-radius: 50px;
+</div>
+
+<h3>border-radius-top</h3>
+<div class="box2 redius-top">
+    border-radius: 30px 30px 0 0;
+</div>
+
+<h3>border-radius-circle</h3>
+<div class="redius-circle">
+</div>
+
+<h3>เงาธรรมดา</h3>
+<div class="box3 box-shadow-normal">
+    เงาธรรมดา
+</div>
+
+<h3>เงาข้างใน</h3>
+<div class="box3 box-shadow-inset">
+    เงาข้างใน
+</div>
+
+<h3>เงาแบบฟุ้งเงา</h3>
+<div class="box3 box-shadow-blur">
+    เงาแบบฟุ้งเงา
+</div>
+
+<H3>เงาหลายชั้น</H3>
+<div class="box3 box-shadow-multi">
+    เงาหลายชั้น
+</div>
+
+<h3>เงาทิศทางลงล่าง</h3>
+<div class="box3 box-shadow-down">
+    เงาทิศทางลงล่าง
+</div>
+</body>
+</html>

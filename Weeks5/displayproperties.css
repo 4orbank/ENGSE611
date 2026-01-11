@@ -1,0 +1,24 @@
+.block-element {
+    display: block;
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: lightblue;
+}
+
+.inline-element {
+    display: inline;
+    padding: 5px;
+    margin-right: 5px;
+    background-color: rgb(255, 0, 115);
+}
+
+.inline-block-element {
+    display: inline-block;
+    height: 40px;
+    width: 120px;
+    background-color: palegreen;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid black;
+}

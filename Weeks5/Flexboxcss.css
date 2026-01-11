@@ -1,0 +1,50 @@
+/* กล่องแม่ */
+.flex-box{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    background: whitesmoke;
+    padding: 15px;
+    border: 2px solid white;
+    height: 150px;
+}
+
+/* กล่องลูก */
+.item{
+    background: navy;
+    color: white;
+    font-size: 20px;
+    width: 80px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* ใช้ align-items: stretch */
+.stretch .item{
+    background: teal;
+}
+
+
+.flex-box-column{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: whitesmoke;
+    padding: 15px;
+    border: 2px solid white;
+    height: 200px;
+}
+
+
+.item-column{
+    background: navy;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.stretch .item-column{
+    background: teal;
+    height: auto;
+}

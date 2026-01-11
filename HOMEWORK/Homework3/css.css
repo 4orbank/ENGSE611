@@ -1,0 +1,96 @@
+.body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+}
+.flex-box{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    background: whitesmoke;
+    padding: 15px;
+    border: 2px solid white;
+    height: 130px;
+    margin-top: 50px;
+}
+
+.item{
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    width: 300px;
+    text-align: center;
+    padding: 10px 0;
+    height: 100px;
+    border: 0.01px solid rgb(173, 173, 173);
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.box-shadow{
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.item:hover{
+    transform: scale(1.05);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+}
+
+.grid-container{
+    display: grid;
+    grid-template:
+        "header header" 90px
+        "aside main" 400px
+        /25% 75%; 
+
+    gap: 10px;
+    padding: 10px;
+    background-color: whitesmoke;
+    height: 100vh;
+    box-sizing: border-box ;
+}
+
+header{
+    grid-area: header; 
+    background-color: rgb(255, 255, 255);
+    color: rgb(6, 3, 3);;
+}
+
+aside{
+    grid-area: aside;
+    background-color: #1c277b;
+    color: white; font-size: 18px;
+}
+
+main{
+    grid-area: main;
+    background-color: white;
+    color: black;
+}
+
+@media screen and (max-width: 600px) {
+    .grid-container{
+        grid-template:
+            "header" 90px
+            "aside" auto
+            "main" auto
+            /100%;
+    }
+
+    aside{
+        line-height: 80px;
+    }
+
+    main{
+        line-height: 80px;
+    }
+
+    .flex-box{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .item{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

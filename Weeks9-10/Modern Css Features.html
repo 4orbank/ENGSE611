@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* ==========
+    css variables (mobile first)
+      ====================*/
+    :root {
+      --padding: 16px;
+      --bg-color: whitesmoke;
+      --card-bg: #ffffff;
+      --text-color: #1f2933;
+    }
+
+    /* ปรับค่าตัวแปรสำหรับหน้าจอขนาดตั้งแต่ 768px ขึ้นไป */
+    @media (min-width: 768px) {
+      :root {
+        --padding: 24px;
+    }
+      body {
+        margin: 0;
+        font-family: tahoma, sans-serif;
+        background-color: var(--bg-color);
+        color: var(--text-color);
+      }
+    }
+    /* ปรับค่าตัวแปรสำหรับหน้าจอขนาดตั้งแต่ 1024px ขึ้นไป */
+    @media (min-width: 1024px) {
+      :root {
+        --padding: 32px;
+      }
+    }
+    
+    /* ====================
+    container ใช้ css variables
+      ====================*/
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: var(--padding);
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      padding: var(--padding);
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    /* ====================
+    clamp สำหปรับ typography
+      ====================*/
+    h1 {
+      font-size: clamp(1.5rem, 2.5vw, 3rem);
+      margin-top: 0;
+    } 
+    p {
+      font-size: clamp(1rem, 1.5vw, 1.25rem);
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1>Modern CSS Features</h1>
+      <p>
+        This is an example of using modern CSS features such as CSS variables and the clamp() function for responsive typography. Resize the browser window to see how the padding and font sizes adjust based on the viewport width.
+      </p>
+    </div>
+</body>
+</html>

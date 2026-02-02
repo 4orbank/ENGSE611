@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*====================
+        กล่องแม่ (Flex Box container)
+        ====================*/
+      .flex-container {
+        display: flex;
+        flex-direction: column; /* จัดเรียงแนวตั้ง */
+        gap: 15px; /* ระยะห่างระหว่างกล่องลูก */
+        background: whitesmoke;
+        padding: 15px;
+        border-radius: 10px;
+      }
+
+      /*====================
+        กล่องลูก (Flex Box item)
+        ====================*/
+      .item {
+        background: darkblue;
+        color: white;
+        height: 120px;
+        display: flex;
+        justify-content: center; /* แนวนอน */
+        align-items: center; /* แนวตั้ง */
+        font-size: 18px;
+        border-radius: 8px;
+      }
+
+      /*====================
+        สไตล์สำหรับหน้าจอขนาดตั้งแต่ 768px หรือ tablet ขึ้นไป
+        ====================*/
+
+      @media (min-width: 768px) {
+        .flex-container {
+          flex-direction: row; /* จัดเรียงแนวนอน */
+          flex-wrap: wrap; /* ให้กล่องลูกเลื่อนลงบรรทัดใหม่ได้ */
+        }
+
+        .item {
+          flex: 1 1 45%; /* 2 กล่องต่อแถว โดยเว้นระยะห่าง */
+        }
+      }
+      /*====================
+        สไตล์สำหรับหน้าจอขนาดตั้งแต่ 1024px หรือ desktop ขึ้นไป
+        ====================*/
+      @media (min-width: 1024px) {
+        .flex-container {
+          flex-wrap: nowrap; /* ไม่ต้องเลื่อนบรรทัด */
+        }
+        .item {
+          flex: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flexbox กับ responsive design</h1>
+
+    <div class="flex-container">
+      <div class="item">กล่องที่ 1</div>
+      <div class="item">กล่องที่ 2</div>
+      <div class="item">กล่องที่ 3</div>
+      <div class="item">กล่องที่ 4</div>
+    </div>
+  </body>
+</html>
